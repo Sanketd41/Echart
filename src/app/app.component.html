@@ -1,0 +1,9 @@
+<app-header></app-header>
+
+<select [(ngModel)]="selectedChartType">
+  <option value="bar">Bar Chart</option>
+  <option value="pie">Pie Chart</option>
+  <option value="line">Line Chart</option>
+</select>
+
+<app-chart [data]="chartData" [type]="selectedChartType"></app-chart>
